@@ -36,7 +36,7 @@ public class Main5 {
 	}
 	
 	private static String clearLine(String line) {
-		String codes = "[,-.:;\'\"\\!\\?]";
+		String codes = "(\\s-\\s)|[,.:;\'\"\\!\\?]";
 		return line.replaceAll(codes, " ");
 	}
 	
